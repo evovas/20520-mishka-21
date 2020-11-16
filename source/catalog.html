@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка - Каталог товаров</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">Каталог товаров</li>
+          <li class="main-nav__item">Вязание на заказ</li>
+        </ul>
+      </nav>
+      <a class="page-header__search" href="#">Поиск по сайту</a>
+      <a class="page-header__cart">Корзина: пока пуста</a>
+      <ul class="page-header__specials-list">
+        <li class="page-header__specials-item">Новые поступления</li>
+        <li class="page-header__specials-item">Распродажа</li>
+      </ul>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
+    </header>
+
+    <main class="page-main catalog">
+      <header class="page-main__header content-header">
+        <h1 class="content-header__heading">Каталог товаров</h1>
+      </header>
+
+      <ul class="catalog__list">
+        <li class="catalog__item product-card">
+          <a href="#">
+            <img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Вязаный зайчик в голубом костюме на фоне игрушечного мороженого">
+            <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="product-card__characteristics">Рост 30 см, вес 200 г</p>
+          <p class="product-card__price"><b>1 200 руб.</b></p>
+          <a class="product-card__add-cart"><span class="visually-hidden">Добавить в корзину</span></a>
+        </li>
+        <li class="catalog__item product-card">
+          <a href="#">
+            <img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Бело-оранжевая вязаная корзинка с бельем внутри">
+            <h3 class="product-card__title">Корзинка для белья</h3>
+          </a>
+          <p class="product-card__characteristics">Диаметр 15 см, высота 10 см</p>
+          <p class="product-card__price"><b>690 руб.</b></p>
+          <a class="product-card__add-cart"><span class="visually-hidden">Добавить в корзину</span></a>
+        </li>
+        <li class="catalog__item product-card">
+          <a href="#">
+            <img class="product-card__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Бело-зеленая вязаная корзинка с детскими игрушками внутри">
+            <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="product-card__characteristics">Диаметр 30 см, высота 30 см</p>
+          <p class="product-card__price"><b>1 500 руб.</b></p>
+          <a class="product-card__add-cart"><span class="visually-hidden">Добавить в корзину</span></a>
+        </li>
+      </ul>
+
+      <aside class="page-main__create-process create-process">
+        <h2 class="create-process__heading">Процесс производства</h2>
+        <!-- Здесь будет видео -->
+        <p class="create-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      </aside>
+
+      <a class="catalog__order-button button" href="#">Сделать заказ</a>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина MiSHKA">
+      </a>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#" target="_blank"><span class="visually-hidden">Instagram</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#" target="_blank"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#" target="_blank"><span class="visually-hidden">Twitter</span></a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+      </p>
+    </footer>
+
+    <section class="modal-window modal-add-cart">
+      <h2 class="modal-add-cart__heading">Добавить в корзину</h2>
+      <form class="modal-add-cart__form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset name="modal-add-cart__fieldset product-parameter">
+          <legend class="product-parameter__name">Выберите размер:</legend>
+          <ul class="product-parameter__list">
+            <li class="product-parameter__item">
+              <input class="product-parameter__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
+              <label class="product-parameter__value" for="product-size-s">S</label>
+            </li>
+            <li class="product-parameter__item">
+              <input class="product-parameter__input" type="radio" id="product-size-m" name="product-size" value="m" checked>
+              <label class="product-parameter__value" for="product-size-m">M</label>
+            </li>
+            <li class="product-parameter__item">
+              <input class="product-parameter__input" type="radio" id="product-size-l" name="product-size" value="l" checked>
+              <label class="product-parameter__value" for="product-size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal-add-cart__button" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
