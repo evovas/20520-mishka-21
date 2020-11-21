@@ -1,0 +1,22 @@
+.characteristics-list {
+  color: $black-text;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.characteristics-list__characteristic {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid $grey-border-mobile;
+}
+
+.characteristics-list__term {
+  width: 97px;
+}
+
+.characteristics-list__definition {
+  margin: 0;
+  width: 163px;
+}

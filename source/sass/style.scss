@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "fonts";
+@import "variables";
+@import "global/scaffolding";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/button";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/page-main";
+@import "blocks/content-header";
+@import "blocks/week-offer";
+@import "blocks/characteristics-list";
+@import "blocks/about-us";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/yandex-map";
+@import "blocks/social-list";
+@import "blocks/page-footer";
+@import "blocks/product-parameter";
+@import "blocks/modal-add-cart";
+@import "blocks/visually-hidden";

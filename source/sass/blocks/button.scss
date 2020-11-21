@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 13px;
+
+  color: $black-text;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $black-text;
+
+  &--mint {
+    color: $white;
+    line-height: 16px;
+
+    background-color: $mint-main;
+    border: none;
+  }
+}

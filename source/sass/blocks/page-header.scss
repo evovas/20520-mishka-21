@@ -1,0 +1,58 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.page-header__logo-wrapper {
+  padding-left: 116px;
+  padding-top: 22px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid $grey-border-mobile;
+}
+
+.page-header__link-wrapper {
+  padding-left: 77px;
+  padding-right: 30px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  border-bottom: 1px solid $grey-border-mobile;
+}
+
+.page-header__search {
+  display: block;
+  color: $black;
+}
+
+.page-header__cart {
+  display: block;
+  color: $black;
+}
+
+.page-header__specials-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+
+  list-style: none;
+}
+
+.page-header__specials-item {
+  a {
+    color: $black;
+  }
+}
+
+.page-header__delivery {
+  display: none;
+  font-weight: 400;
+  font-size: 15px;
+}

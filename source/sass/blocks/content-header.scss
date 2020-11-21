@@ -1,0 +1,39 @@
+.content-header__heading {
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 119px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+  background-image: url("../img/content-header-mobile.jpg");
+}
+
+.content-header__category-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.content-header__category-item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &:nth-child(odd) {
+    background-color: $mint-main;
+  }
+
+  &:nth-child(even) {
+    background-color: $mint-special;
+  }
+
+  a {
+    display: block;
+    padding-right: 160px;
+    padding-top: 24px;
+    padding-bottom: 31px;
+    color: $white;
+  }
+}

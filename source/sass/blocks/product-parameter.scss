@@ -1,0 +1,44 @@
+.product-parameter {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.product-parameter__name {
+  display: block;
+
+  color: $black-text;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.product-parameter__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-parameter__input {
+  display: none;
+
+  &:checked + label {
+    border: 2px solid $mint-main;
+  }
+}
+
+.product-parameter__value {
+  display: block;
+  width: 82px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  text-align: center;
+  font-weight: 700;
+
+  border: 2px solid rgba($black-text, 0.1);
+}

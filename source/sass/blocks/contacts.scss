@@ -1,0 +1,39 @@
+.contacts__heading {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  margin: 0;
+  margin-bottom: 62px;
+
+  color: $black-text;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contacts__name {
+  display: block;
+  width: 77px;
+}
+
+.contacts__value {
+  margin: 0;
+  width: 183px;
+}
+
+.contacts__map {
+  margin-bottom: 42px;
+}
+
+.contacts__write-button {
+  margin-bottom: 39px;
+}
