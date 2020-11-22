@@ -1,6 +1,6 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now";
-@import "fonts";
-@import "variables";
+@import "global/fonts";
+@import "global/variables";
 @import "global/scaffolding";
 @import "blocks/container";
 @import "blocks/page";

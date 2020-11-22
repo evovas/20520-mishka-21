@@ -31,9 +31,12 @@
 
   a {
     display: block;
-    padding-right: 160px;
     padding-top: 24px;
     padding-bottom: 31px;
     color: $white;
+  }
+
+  .container {
+    padding-right: 160px;
   }
 }
