@@ -1,0 +1,22 @@
+.about-us__heading {
+  margin: 0;
+  margin-bottom: 82px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about-us__fact-list {
+  margin: 0;
+  padding: 0;
+
+  line-height: 20px;
+  font-weight: 700;
+
+  list-style: none;
+}
+
+.about-us__fact-item {
+  &:not(:last-child) {
+    margin-bottom: 83px;
+  }
+}

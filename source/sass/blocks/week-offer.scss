@@ -1,0 +1,51 @@
+.week-offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-offer__heading {
+  order: -1;
+  margin: 0;
+
+  color: $mint-main;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.week-offer__name {
+  order: -2;
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.week-offer__description {
+  margin-bottom: 20px;
+  color: $black-text;
+  font-size: 15px;
+}
+
+.week-offer__characteristics {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.week-offer__image {
+  margin-bottom: 27px;
+}
+
+.week-offer__price {
+  margin: 0;
+  margin-bottom: 24px;
+
+  color: $black-text;
+  font-weight: 700;
+  text-align: center;
+}
+
+.week-offer__button {
+  margin-bottom: 36px;
+}

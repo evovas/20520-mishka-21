@@ -1,0 +1,26 @@
+.yandex-map {
+  position: relative;
+  overflow: hidden;
+  height: 454px;
+
+  a {
+    color: #eeeeee;
+    font-size: 12px;
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 14px;
+    }
+  }
+
+  iframe {
+    position: relative;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
