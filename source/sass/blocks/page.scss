@@ -21,3 +21,9 @@
     margin-bottom: -66px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__contacts {
+    margin: 0 auto;
+  }
+}

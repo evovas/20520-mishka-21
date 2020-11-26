@@ -66,6 +66,7 @@
 
     background-image: url("../img/content-header-tablet.jpg");
     background-position: center 0;
+    background-repeat: no-repeat;
   }
 
   .content-header__text-wrapper {
@@ -98,5 +99,16 @@
     width: 50%;
     padding-left: 36px;
     padding-right: 167px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-header__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .content-header__category-list {
+    width: 1150px;
   }
 }

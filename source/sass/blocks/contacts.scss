@@ -52,6 +52,12 @@
     flex-direction: column;
   }
 
+  .contacts__wrapper {
+    width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
   .contacts__heading {
     font-size: 43px;
     line-height: 50px;
@@ -89,5 +95,40 @@
     min-width: 230px;
     padding-left: 26px;
     padding-right: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: grid;
+    grid-template:
+      "information map"
+      "button map"
+      ". map";
+    width: 1150px;
+    padding: 0 50px;
+    padding-left: 225px;
+  }
+
+  .contacts__wrapper {
+    grid-area: information;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__list {
+    grid-template-columns: 320px;
+    grid-column-gap: 13px;
+  }
+
+  .contacts__map {
+    grid-area: map;
+    width: 527px;
+    height: 457px;
+  }
+
+  .contacts__write-button {
+    grid-area: button;
   }
 }

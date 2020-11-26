@@ -124,3 +124,9 @@
     top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-left: 225px;
+  }
+}
