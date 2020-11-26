@@ -2,30 +2,30 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
         </a>
       </div>
-      <nav class="main-nav">
+      <div class="page-header__link-wrapper page-header__link-wrapper--search">
+        <a class="page-header__search" href="#" aria-label="Поиск по сайту"><span class="page-header__search-text">Поиск по сайту</span></a>
+      </div>
+      <div class="page-header__link-wrapper page-header__link-wrapper--cart">
+        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+      </div>
+      <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
-      <div class="page-header__link-wrapper">
-        <a class="page-header__search" href="#">Поиск по сайту</a>
-      </div>
-      <div class="page-header__link-wrapper">
-        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
-      </div>
       <ul class="page-header__specials-list">
         <li class="page-header__specials-item"><a href="#">Новые поступления</a></li>
         <li class="page-header__specials-item"><a href="#">Распродажа</a></li>
@@ -33,9 +33,9 @@
       <p class="page-header__delivery">Бесплатная доставка по России</p>
     </header>
 
-    <main class="page-main">
+    <main class="page__main page-main">
       <header class="page-main__header content-header">
-        <h1 class="content-header__heading container">Милые штуки ручной <br>работы для дома</h1>
+        <h1 class="content-header__heading"><span class="content-header__text-wrapper">Милые штуки ручной <br>работы для дома</span></h1>
         <ul class="content-header__category-list">
           <li class="content-header__category-item"><a href="#"><div class="content-header__category-wrapper">Предметы интерьера</div></a></li>
           <li class="content-header__category-item"><a href="#"><div class="content-header__category-wrapper">Детские игрушки</div></a></li>
@@ -43,26 +43,30 @@
       </header>
 
       <section class="page-main__week-offer week-offer container">
-        <h2 class="week-offer__heading">Товар недели</h2>
-        <h3 class="week-offer__name">Вязаные корзинки</h3>
-        <p class="week-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="week-offer__characteristics characteristics-list">
-          <div class="characteristics-list__characteristic">
-            <dt class="characteristics-list__term">Цвет:</dt>
-            <dd class="characteristics-list__definition">«Тиффани»/серый</dd>
-          </div>
-          <div class="characteristics-list__characteristic">
-            <dt class="characteristics-list__term">Диаметр:</dt>
-            <dd class="characteristics-list__definition">25 см</dd>
-          </div>
-          <div class="characteristics-list__characteristic">
-            <dt class="characteristics-list__term">Высота:</dt>
-            <dd class="characteristics-list__definition">15 см</dd>
-          </div>
-        </dl>
-        <img class="week-offer__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Три вязаные корзинки в руках">
-        <p class="week-offer__price">Цена: 990 руб.</p>
-        <a class="week-offer__button button" href="#">Заказать</a>
+        <div class="week-offer__heading-wrapper">
+          <h2 class="week-offer__heading">Товар недели</h2>
+          <h3 class="week-offer__name">Вязаные корзинки</h3>
+        </div>
+        <div class="week-offer__content-wrapper">
+          <p class="week-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <dl class="week-offer__characteristics characteristics-list">
+            <div class="characteristics-list__characteristic">
+              <dt class="characteristics-list__term">Цвет:</dt>
+              <dd class="characteristics-list__definition">«Тиффани»/серый</dd>
+            </div>
+            <div class="characteristics-list__characteristic">
+              <dt class="characteristics-list__term">Диаметр:</dt>
+              <dd class="characteristics-list__definition">25 см</dd>
+            </div>
+            <div class="characteristics-list__characteristic">
+              <dt class="characteristics-list__term">Высота:</dt>
+              <dd class="characteristics-list__definition">15 см</dd>
+            </div>
+          </dl>
+          <img class="week-offer__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Три вязаные корзинки в руках">
+          <p class="week-offer__price">Цена: 990 руб.</p>
+          <a class="week-offer__button button" href="#">Заказать</a>
+        </div>
       </section>
 
       <section class="page-main__about-us about-us container">
@@ -123,11 +127,9 @@
         <div class="contacts__map yandex-map">
           <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">Санкт‑Петербург</a>
           <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=17" >Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAjZxhtB" width="560" height="454"  allowfullscreen="allowfullscreen"></iframe>
+<!--          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAjZxhtB" width="560" height="454"  allowfullscreen="allowfullscreen"></iframe>-->
         </div>
-        <div class="container">
           <a class="contacts__write-button button" href="#">Напишите нам</a>
-        </div>
       </section>
     </main>
 
@@ -152,8 +154,8 @@
       </div>
     </footer>
 
-    <section class="modal-window modal-add-cart">
-      <div class="container">
+    <section class="page__modal modal-window modal-add-cart">
+      <div class="modal-window__wrapper">
         <h2 class="modal-add-cart__heading">Добавить в корзину</h2>
         <form class="modal-add-cart__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="modal-add-cart__fieldset product-parameter">

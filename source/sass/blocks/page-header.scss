@@ -8,7 +8,13 @@
   line-height: 24px;
 }
 
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo-wrapper {
+  order: 1;
   padding-top: 22px;
   padding-bottom: 16px;
 
@@ -17,13 +23,31 @@
   border-bottom: 1px solid $grey-border-mobile;
 }
 
+.page-header__main-nav {
+  order: 2;
+}
+
 .page-header__link-wrapper {
-  padding-left: 77px;
-  padding-right: 30px;
   padding-top: 28px;
   padding-bottom: 26px;
 
   border-bottom: 1px solid $grey-border-mobile;
+
+  &--search {
+    order: 3;
+  }
+
+  &--cart {
+    order: 4;
+  }
+
+  a {
+    display: block;
+    width: 320px;
+    padding: 0 30px;
+    padding-left: 77px;
+    margin: 0 auto;
+  }
 }
 
 .page-header__search {
@@ -56,4 +80,92 @@
   display: none;
   font-weight: 400;
   font-size: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: grid;
+    grid-template-columns: 48.17% 10.95% 40.88%;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+      "logo search cart"
+      "nav nav delivery";
+  }
+
+  .page-header__logo-wrapper {
+    grid-area: logo;
+    padding-left: 50px;
+
+    text-align: left;
+
+    border-color: rgba($black, 0.1);
+  }
+
+  .page-header__main-nav {
+    grid-area: nav;
+    padding-left: 50px;
+  }
+
+  .page-header__link-wrapper {
+    padding-top: 33px;
+    padding-bottom: 31px;
+
+    border-color: rgba($black, 0.1);
+
+    &--search {
+      grid-area: search;
+      padding: 0;
+    }
+
+    &--cart {
+      grid-area: cart;
+      padding-right: 50px;
+
+      text-align: right;
+    }
+
+    a {
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .page-header__search {
+    display: block;
+    width: 82px;
+    height: 88px;
+
+    border-left: 1px solid rgba($black, 0.1);
+    border-right: 1px solid rgba($black, 0.1);
+  }
+
+  .page-header__search-text {
+    display: none;
+  }
+
+  .page-header__delivery {
+    display: block;
+    grid-area: delivery;
+    margin: 0;
+    margin-top: 20px;
+    padding-right: 50px;
+
+    color: $black-text;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: grid;
+    grid-template-columns: 30%  200px 84px 30%;
+    grid-template-areas:
+      "nav logo search cart"
+      "specials specials specials delivery";
+  }
+
+  .page-header__specials-list {
+    display: flex;
+  }
 }
