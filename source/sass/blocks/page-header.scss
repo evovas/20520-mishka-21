@@ -91,11 +91,13 @@
     grid-template-areas:
       "logo search cart"
       "nav nav delivery";
+    width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
   }
 
   .page-header__logo-wrapper {
     grid-area: logo;
-    padding-left: 50px;
 
     text-align: left;
 
@@ -104,7 +106,6 @@
 
   .page-header__main-nav {
     grid-area: nav;
-    padding-left: 50px;
   }
 
   .page-header__link-wrapper {
@@ -120,7 +121,6 @@
 
     &--cart {
       grid-area: cart;
-      padding-right: 50px;
 
       text-align: right;
     }
@@ -154,7 +154,6 @@
     grid-area: delivery;
     margin: 0;
     margin-top: 20px;
-    padding-right: 50px;
 
     color: $black-text;
     text-align: right;
@@ -163,14 +162,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    display: grid;
     grid-template-columns: 447px  252px 84px 266px;
     grid-template-areas:
       "nav logo search cart"
       "specials specials specials delivery";
     width: 1150px;
-    padding: 0 50px;
-    margin: 0 auto;
   }
 
   .page-header__logo-wrapper {
