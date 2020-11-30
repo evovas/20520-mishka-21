@@ -29,21 +29,11 @@
 
   .about-us__fact-list {
     display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 314px 324px;
+    column-gap: 20px;
 
     font-size: 20px;
     line-height: 22px;
-  }
-
-  .about-us__fact-item {
-    &:nth-child(-n + 3) {
-      grid-column: 1 / 2;
-    }
-
-    &:nth-child(n + 4):nth-child(-n + 6) {
-      grid-column: 2 / 3;
-    }
   }
 }
 
