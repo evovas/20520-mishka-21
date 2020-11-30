@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка - Вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
+        </a>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a>Вязание на заказ</a></li>
         </ul>
       </nav>
-      <a class="page-header__search" href="#">Поиск по сайту</a>
-      <a class="page-header__cart">Корзина: пока пуста</a>
+      <div class="page-header__link-wrapper">
+        <a class="page-header__search" href="#">Поиск по сайту</a>
+      </div>
+      <div class="page-header__link-wrapper">
+        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+      </div>
       <ul class="page-header__specials-list">
         <li class="page-header__specials-item"><a href="#">Новые поступления</a></li>
         <li class="page-header__specials-item"><a href="#">Распродажа</a></li>
@@ -35,7 +43,7 @@
         <form class="customize-offer__form page-form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="page-form__fieldset">
             <legend class="page-form__legend">Тип</legend>
-            <ul class="page-form__parameter-list">
+            <ul class="page-form__parameter-list page-form__parameter-list--radio">
               <li class="page-form__parameter-item input-radio">
                 <input type="radio" id="type-accessory" name="type" value="accessory" checked>
                 <label class="input-radio__label" for="type-accessory">Аксессуар для интерьера</label>
@@ -48,7 +56,7 @@
           </fieldset>
           <fieldset class="page-form__fieldset">
             <legend class="page-form__legend">Цвет</legend>
-            <ul class="page-form__parameter-list">
+            <ul class="page-form__parameter-list page-form__parameter-list--checkbox">
               <li class="page-form__parameter-item input-checkbox">
                 <input type="checkbox" id="color-white" name="color" value="white" checked>
                 <label class="input-checkbox__label" for="color-white">Белый</label>

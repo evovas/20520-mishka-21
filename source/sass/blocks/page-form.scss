@@ -1,0 +1,37 @@
+.page-form {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.page-form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-top: 1px solid $mint-border;
+}
+
+.page-form__legend {
+  min-width: 60px;
+
+  color: $mint-main;
+  text-transform: uppercase;
+}
+
+.page-form__parameter-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &--radio,
+  &--checkbox {
+    padding-top: 42px;
+    padding-bottom: 43px;
+    padding-left: 61px;
+
+    li:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
