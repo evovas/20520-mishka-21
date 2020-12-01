@@ -6,8 +6,7 @@
 }
 
 .about-us__fact-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 0;
   padding: 0;
 
@@ -18,28 +17,8 @@
 }
 
 .about-us__fact-item {
-  &:nth-child(1) {
-    order: 1;
-  }
-
-  &:nth-child(2) {
-    order: 4;
-  }
-
-  &:nth-child(3) {
+  &:nth-child(2n) {
     order: 2;
-  }
-
-  &:nth-child(4) {
-    order: 5;
-  }
-
-  &:nth-child(5) {
-    order: 3;
-  }
-
-  &:nth-child(6) {
-    order: 6;
   }
 
   &:not(:last-child) {
@@ -54,7 +33,6 @@
   }
 
   .about-us__fact-list {
-    display: grid;
     grid-template-columns: 314px 324px;
     column-gap: 20px;
 

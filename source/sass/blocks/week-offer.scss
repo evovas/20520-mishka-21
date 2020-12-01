@@ -1,6 +1,5 @@
 .week-offer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .week-offer__heading {
@@ -53,7 +52,6 @@
 
 @media (min-width: $tablet-width) {
   .week-offer {
-    display: grid;
     grid-template-areas:
       "name name heading"
       "description image image"
