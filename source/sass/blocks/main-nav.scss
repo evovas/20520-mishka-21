@@ -21,19 +21,22 @@
 }
 
 .main-nav__item {
-  padding-top: 28px;
-  padding-bottom: 26px;
-
   border-bottom: 1px solid $grey-border-mobile;
 
   a {
     display: block;
-    width: 320px;
-    padding: 0 30px;
-    padding-left: 77px;
-    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 26px;
     color: $black;
   }
+}
+
+.main-nav__link-wrapper {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 77px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,5 +65,10 @@
       padding: 0;
       margin: 0;
     }
+  }
+
+  .main-nav__link-wrapper {
+    width: auto;
+    padding: 0;
   }
 }
