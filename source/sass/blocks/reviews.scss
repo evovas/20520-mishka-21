@@ -84,3 +84,49 @@
 .reviews__write-button {
   margin-bottom: 45px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+  }
+
+  .reviews__heading {
+    max-width: 450px;
+    margin-bottom: 38px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    margin-bottom: 61px;
+
+    font-size: 17px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+  }
+
+  .reviews__control-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .reviews__control-button {
+    border: none;
+  }
+
+  .reviews__write-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-left: 225px;
+  }
+}
