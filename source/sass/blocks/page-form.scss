@@ -9,6 +9,10 @@
 
   border: none;
   border-top: 1px solid $mint-border;
+
+  &--no-legend {
+    border: none;
+  }
 }
 
 .page-form__legend {
@@ -28,10 +32,18 @@
   &--checkbox {
     padding-top: 42px;
     padding-bottom: 43px;
-    padding-left: 61px;
 
     li:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &--text-group {
+    padding-top: 29px;
+    padding-bottom: 34px;
+
+    li:not(:last-child) {
+      margin-bottom: 22px;
     }
   }
 }

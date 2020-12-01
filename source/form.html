@@ -85,7 +85,7 @@
           </fieldset>
           <fieldset class="page-form__fieldset">
             <legend class="page-form__legend">ФИО</legend>
-            <ul class="page-form__parameter-list">
+            <ul class="page-form__parameter-list page-form__parameter-list--text-group">
               <li class="page-form__parameter-item input-text">
                 <label class="input-text__label" for="user-name">Имя:</label>
                 <input class="input-text__input" type="text" id="user-name" name="user-name" value="" placeholder="Введите ваше имя*" required>
@@ -100,22 +100,22 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="page-form__fieldset">
+          <fieldset class="page-form__fieldset page-form__fieldset--no-legend">
             <legend class="visually-hidden">Контактная информация</legend>
             <ul class="page-form__parameter-list">
               <li class="page-form__parameter-item input-text input-text--phone">
-                <label class="input-text__label--legend" for="user-phone">Тел</label>
+                <label class="input-text__label input-text__label--legend" for="user-phone">Тел</label>
                 <input class="input-text__input" type="tel" id="user-phone" name="user-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </li>
               <li class="page-form__parameter-item input-text input-text--email">
-                <label class="input-text__label--legend" for="user-email">E-mail</label>
+                <label class="input-text__label input-text__label--legend" for="user-email">E-mail</label>
                 <input class="input-text__input" type="email" id="user-email" name="user-email" value="" placeholder="Ваш Email*" required>
               </li>
             </ul>
           </fieldset>
           <ul class="page-form__parameter-list">
             <li class="page-form__parameter-item input-textarea">
-              <label class="input-textarea__legend--legend" for="comment-offer">Доп<span class="visually-hidden">олнительная информация к заказу</span></label>
+              <label class="input-textarea__label input-textarea__label--legend" for="comment-offer">Доп<span class="visually-hidden">олнительная информация к заказу</span></label>
               <textarea class="input-textarea__input" id="comment-offer" name="user-phone">Опишите все ваши пожелания к заказу</textarea>
             </li>
           </ul>
