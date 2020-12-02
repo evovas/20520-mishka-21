@@ -1,3 +1,11 @@
+.modal-add-cart {
+  display: none;
+
+  &--open {
+    display: flex;
+  }
+}
+
 .modal-add-cart__heading {
   font-size: 25px;
   line-height: 30px;
@@ -9,6 +17,11 @@
   margin-bottom: 31px;
 }
 
+.product-parameter__name {
+  margin-bottom: 21px;
+}
+
 .modal-add-cart__button {
   width: 100%;
+  margin-bottom: 46px;
 }

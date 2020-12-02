@@ -1,3 +1,9 @@
+.contacts__wrapper {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .contacts__heading {
   margin: 0;
   margin-bottom: 28px;
@@ -22,18 +28,109 @@
 
 .contacts__name {
   display: block;
+  flex-shrink: 0;
   width: 77px;
+  padding-right: 10px;
 }
 
 .contacts__value {
   margin: 0;
-  width: 183px;
 }
 
 .contacts__map {
+  margin: 0 auto;
   margin-bottom: 42px;
+
+  //Временно для сетки
+  width: 320px;
+  height: 454px;
+  background-color: grey;
 }
 
 .contacts__write-button {
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: grid;
+  }
+
+  .contacts__wrapper {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .contacts__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-column-gap: 13px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__item {
+    margin: 0;
+  }
+
+  .contacts__name {
+    width: 81px;
+  }
+
+  .contacts__value {
+    width: 239px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__write-button {
+    width: auto;
+    min-width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    grid-template:
+      "information map"
+      "button map"
+      ". map";
+    width: 1150px;
+    padding: 0 50px;
+    padding-left: 225px;
+  }
+
+  .contacts__wrapper {
+    grid-area: information;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__list {
+    grid-template-columns: 320px;
+    grid-column-gap: 13px;
+  }
+
+  .contacts__map {
+    grid-area: map;
+    width: 527px;
+    height: 457px;
+  }
+
+  .contacts__write-button {
+    grid-area: button;
+  }
 }

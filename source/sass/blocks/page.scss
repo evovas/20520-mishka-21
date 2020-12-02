@@ -8,3 +8,22 @@
   min-height: 100%;
   grid-template-rows: min-content 1fr min-content;
 }
+
+.page__modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .page__header {
+    margin-bottom: -66px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__contacts {
+    margin: 0 auto;
+  }
+}
