@@ -7,31 +7,27 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
-        </a>
-      </div>
-      <nav class="main-nav">
+  <header class="page__header page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
+      </a>
+      <a class="page-header__search" href="#" aria-label="Поиск по сайту"><span class="page-header__search-text page-header__link-wrapper">Поиск по сайту</span></a>
+      <a class="page-header__cart" href="#"><span class="page-header__link-wrapper"> Корзина: пока пуста</span></a>
+      <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a>Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="catalog.html"><span class="main-nav__link-wrapper">Каталог товаров</span></a></li>
+          <li class="main-nav__item"><a><span class="main-nav__link-wrapper">Вязание на заказ</span></a></li>
         </ul>
       </nav>
-      <div class="page-header__link-wrapper">
-        <a class="page-header__search" href="#">Поиск по сайту</a>
-      </div>
-      <div class="page-header__link-wrapper">
-        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
-      </div>
       <ul class="page-header__specials-list">
         <li class="page-header__specials-item"><a href="#">Новые поступления</a></li>
         <li class="page-header__specials-item"><a href="#">Распродажа</a></li>
       </ul>
       <p class="page-header__delivery">Бесплатная доставка по России</p>
-    </header>
+    </div>
+  </header>
 
     <main class="page-main">
       <header class="page-main__header content-header">
@@ -40,9 +36,9 @@
 
       <section class="page-main__customize-offer customize-offer">
         <p class="customize-offer__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="customize-offer__form page-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="page-form__fieldset">
-            <legend class="page-form__legend">Тип</legend>
+        <form class="customize-offer__form page-form customize-form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="page-form__fieldset customize-form__type">
+            <legend class="page-form__legend customize-form__type-legend">Тип</legend>
             <ul class="page-form__parameter-list page-form__parameter-list--radio">
               <li class="page-form__parameter-item input-radio">
                 <input type="radio" id="type-accessory" name="type" value="accessory" checked>
@@ -54,36 +50,38 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="page-form__fieldset">
-            <legend class="page-form__legend">Цвет</legend>
-            <ul class="page-form__parameter-list page-form__parameter-list--checkbox">
-              <li class="page-form__parameter-item input-checkbox">
-                <input type="checkbox" id="color-white" name="color" value="white" checked>
-                <label class="input-checkbox__label" for="color-white">Белый</label>
-              </li>
-              <li class="page-form__parameter-item input-checkbox">
-                <input type="checkbox" id="color-grey" name="color" value="grey" checked>
-                <label class="input-checkbox__label" for="color-grey">Серый</label>
-              </li>
-              <li class="page-form__parameter-item input-checkbox">
-                <input type="checkbox" id="color-tiffany" name="color" value="tiffany">
-                <label class="input-checkbox__label" for="color-tiffany">«Тиффани»</label>
-              </li>
-              <li class="page-form__parameter-item input-checkbox">
-                <input type="checkbox" id="color-black" name="color" value="black">
-                <label class="input-checkbox__label" for="color-black">Черный</label>
-              </li>
-              <li class="page-form__parameter-item input-checkbox">
-                <input type="checkbox" id="color-pink" name="color" value="pink">
-                <label class="input-checkbox__label" for="color-pink">Розовый</label>
-              </li>
-              <li class="page-form__parameter-item input-checkbox">
-                <input type="checkbox" id="color-orange" name="color" value="orange">
-                <label class="input-checkbox__label" for="color-orange">Оранжевый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="page-form__fieldset">
+          <div class="page-form__background-wrapper">
+            <fieldset class="page-form__fieldset customize-form__color">
+              <legend class="page-form__legend customize-form__color-legend">Цвет</legend>
+              <ul class="page-form__parameter-list page-form__parameter-list--checkbox customize-form__color-list">
+                <li class="page-form__parameter-item input-checkbox">
+                  <input type="checkbox" id="color-white" name="color" value="white" checked>
+                  <label class="input-checkbox__label" for="color-white">Белый</label>
+                </li>
+                <li class="page-form__parameter-item input-checkbox">
+                  <input type="checkbox" id="color-grey" name="color" value="grey" checked>
+                  <label class="input-checkbox__label" for="color-grey">Серый</label>
+                </li>
+                <li class="page-form__parameter-item input-checkbox">
+                  <input type="checkbox" id="color-tiffany" name="color" value="tiffany">
+                  <label class="input-checkbox__label" for="color-tiffany">«Тиффани»</label>
+                </li>
+                <li class="page-form__parameter-item input-checkbox">
+                  <input type="checkbox" id="color-black" name="color" value="black">
+                  <label class="input-checkbox__label" for="color-black">Черный</label>
+                </li>
+                <li class="page-form__parameter-item input-checkbox">
+                  <input type="checkbox" id="color-pink" name="color" value="pink">
+                  <label class="input-checkbox__label" for="color-pink">Розовый</label>
+                </li>
+                <li class="page-form__parameter-item input-checkbox">
+                  <input type="checkbox" id="color-orange" name="color" value="orange">
+                  <label class="input-checkbox__label" for="color-orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="page-form__fieldset customize-form__user-name">
             <legend class="page-form__legend">ФИО</legend>
             <ul class="page-form__parameter-list page-form__parameter-list--text-group">
               <li class="page-form__parameter-item input-text">
@@ -100,49 +98,56 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="page-form__fieldset page-form__fieldset--no-legend">
-            <legend class="visually-hidden">Контактная информация</legend>
-            <ul class="page-form__parameter-list">
-              <li class="page-form__parameter-item input-text input-text--phone">
-                <label class="input-text__label input-text__label--legend" for="user-phone">Тел</label>
-                <input class="input-text__input" type="tel" id="user-phone" name="user-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              </li>
-              <li class="page-form__parameter-item input-text input-text--email">
-                <label class="input-text__label input-text__label--legend" for="user-email">E-mail</label>
-                <input class="input-text__input" type="email" id="user-email" name="user-email" value="" placeholder="Ваш Email*" required>
-              </li>
-            </ul>
-          </fieldset>
-          <ul class="page-form__parameter-list">
+          <div class="page-form__background-wrapper">
+            <fieldset class="page-form__fieldset page-form__fieldset--no-legend customize-form__contacts">
+              <legend class="visually-hidden">Контактная информация</legend>
+              <ul class="page-form__parameter-list">
+                <li class="page-form__parameter-item input-text customize-form__phone">
+                  <label class="input-text__label input-text__label--legend" for="user-phone">Тел</label>
+                  <input class="input-text__input" type="tel" id="user-phone" name="user-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                </li>
+                <li class="page-form__parameter-item input-text customize-form__email">
+                  <label class="input-text__label input-text__label--legend" for="user-email">E-mail</label>
+                  <input class="input-text__input" type="email" id="user-email" name="user-email" value="" placeholder="Ваш Email*" required>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <ul class="page-form__parameter-list page-form__parameter-list--no-fieldset customize-form__additional">
             <li class="page-form__parameter-item input-textarea">
               <label class="input-textarea__label input-textarea__label--legend" for="comment-offer">Доп<span class="visually-hidden">олнительная информация к заказу</span></label>
-              <textarea class="input-textarea__input" id="comment-offer" name="user-phone">Опишите все ваши пожелания к заказу</textarea>
+              <textarea class="input-textarea__input" id="comment-offer" name="user-phone" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
           </ul>
-          <button class="page-form__button button" type="submit">Отправить заказ</button>
-          <p class="page-form__footnote">*Поля обязательны для заполнения</p>
+          <div class="page-form__bottom-wrapper">
+            <p class="page-form__footnote">*Поля обязательны для заполнения</p>
+            <button class="page-form__button button" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина MiSHKA">
-      </a>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#" target="_blank"><span class="visually-hidden">Instagram</span></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#" target="_blank"><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href="#" target="_blank"><span class="visually-hidden">Twitter</span></a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
-      </p>
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo" href="#">
+          <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина MiSHKA">
+        </a>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#" target="_blank"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#" target="_blank"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#" target="_blank"><span class="visually-hidden">Twitter</span></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
