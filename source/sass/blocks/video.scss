@@ -4,6 +4,8 @@
 
 .video__image {
   display: block;
+  width: 260px;
+  height: 150px;
 }
 
 .video__play-button {
@@ -17,4 +19,17 @@
   border: none;
   background-color: transparent;
   background-image: url("https://via.placeholder.com/100x77");
+}
+
+@media (min-width: $tablet-width) {
+  .video__image {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__image {
+    width: 683px;
+  }
 }

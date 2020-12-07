@@ -15,3 +15,38 @@
 .catalog__create-process {
   margin-bottom: 58px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    &:not(:last-child) {
+      margin-bottom: 54px;
+    }
+  }
+
+  .catalog__list {
+    margin-bottom: 53px;
+  }
+
+  .catalog__create-process {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    grid-gap: 51px;
+    margin-bottom: 57px;
+  }
+
+  .catalog__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__create-process {
+    margin-bottom: 105px;
+  }
+}
