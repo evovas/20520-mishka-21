@@ -1,0 +1,280 @@
+.customize-form {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.customize-form__description {
+  display: block;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+
+  color: $black-text;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.customize-form__fieldset {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  margin-bottom: 30px;
+
+  border: none;
+
+  &--type {
+    margin-bottom: 31px;
+  }
+
+  &--color {
+    margin-bottom: 33px;
+  }
+
+  &--user-name {
+    margin-bottom: 35px;
+  }
+
+  &--contacts {
+    margin-bottom: 34px;
+  }
+}
+
+.customize-form__legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  color: $mint-main;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, $white, $white 60px, transparent 60px, transparent), linear-gradient(transparent, transparent 10px, $mint-border 10px, $mint-border 11px, transparent 11px, transparent);
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+
+    background-color: $white;
+  }
+
+  &--type {
+    margin-bottom: 30px;
+  }
+
+  &--color {
+    margin-bottom: 25px;
+  }
+}
+
+.customize-form__parameter-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &--text-group li:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  &--no-fieldset {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &--additional {
+    margin-bottom: 17px;
+  }
+}
+
+.customize-form__parameter-item {
+  &--phone {
+    margin-bottom: 34px;
+  }
+}
+
+.customize-form__bottom-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.customize-form__footnote {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.customize-form__button {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .customize-form__description {
+    width: 768px;
+    padding: 0 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .customize-form__background-wrapper {
+    padding: 50px 0;
+    margin-bottom: 50px;
+
+    background-color: $grey-footer;
+  }
+
+  .customize-form__fieldset {
+    position: relative;
+    width: 768px;
+    padding: 0 50px;
+    padding-left: 217px;
+    margin-bottom: 50px;
+
+    &--type {
+      margin-bottom: 50px;
+    }
+
+    &--color {
+      margin-bottom: 0;
+    }
+
+    &--user-name {
+      margin-bottom: 50px;
+    }
+
+    &--contacts {
+      margin-bottom: 0;
+    }
+  }
+
+  .customize-form__parameter-list {
+    &--no-fieldset {
+      width: 768px;
+      padding: 0 50px;
+      padding-left: 217px;
+    }
+
+    &--color {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+    }
+
+    &--additional {
+      margin-bottom: 53px;
+    }
+  }
+
+  .customize-form__parameter-item {
+    &--phone {
+      margin-bottom: 24px;
+    }
+  }
+
+  .customize-form__legend {
+    position: absolute;
+    top: 23px;
+    left: 50px;
+    width: auto;
+    margin-bottom: 0;
+
+    background-image: none;
+
+    &::after {
+      content: none;
+    }
+
+    &--type {
+      margin-bottom: 0;
+    }
+
+    &--color {
+      margin-bottom: 0;
+    }
+  }
+
+  .customize-form__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .customize-form__footnote {
+    order: 2;
+    margin-top: 12px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .customize-form__button {
+    order: 1;
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .customize-form__description {
+    width: 1150px;
+    padding: 0 225px;
+  }
+
+  .customize-form__parameter-list {
+    &--no-fieldset {
+      width: 1150px;
+      padding: 0 225px;
+    }
+
+    &--color {
+      grid-template-columns: min-content min-content min-content;  //временно для сетки
+      justify-content: space-between;
+      grid-column-gap: 20px;
+    }
+  }
+
+  .customize-form__fieldset {
+    width: 1150px;
+    padding: 0 225px;
+  }
+
+  .customize-form__legend {
+    top: 23px;
+    left: 97px;
+  }
+
+  .customize-form__bottom-wrapper {
+    width: 1150px;
+    padding: 0 225px;
+  }
+
+  .customize-form__footnote {
+    order: 2;
+    margin-top: 12px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .customize-form__button {
+    order: 1;
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 55px;
+  }
+}
