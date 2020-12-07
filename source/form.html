@@ -34,94 +34,95 @@
         <h1 class="content-header__heading">Вязание на заказ</h1>
       </header>
 
-      <section class="page-main__customize-offer customize-offer">
-        <p class="customize-offer__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="customize-offer__form page-form customize-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="page-form__fieldset customize-form__type">
-            <legend class="page-form__legend customize-form__type-legend">Тип</legend>
-            <ul class="page-form__parameter-list page-form__parameter-list--radio">
-              <li class="page-form__parameter-item input-radio">
+      <section class="page-main__customize-order">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <form class="customize-order__form customize-form" method="post" action="https://echo.htmlacademy.ru">
+          <p class="customize-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <fieldset class="customize-form__fieldset customize-form__fieldset--type">
+            <legend class="customize-form__legend customize-form__legend--type">Тип</legend>
+            <ul class="customize-form__parameter-list customize-form__parameter-list--radio">
+              <li class="customize-form__parameter-item input-radio">
                 <input type="radio" id="type-accessory" name="type" value="accessory" checked>
                 <label class="input-radio__label" for="type-accessory">Аксессуар для интерьера</label>
               </li>
-              <li class="page-form__parameter-item input-radio">
+              <li class="customize-form__parameter-item input-radio">
                 <input type="radio" id="type-toy" name="type" value="toy">
                 <label class="input-radio__label" for="type-toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
-          <div class="page-form__background-wrapper">
-            <fieldset class="page-form__fieldset customize-form__color">
-              <legend class="page-form__legend customize-form__color-legend">Цвет</legend>
-              <ul class="page-form__parameter-list page-form__parameter-list--checkbox customize-form__color-list">
-                <li class="page-form__parameter-item input-checkbox">
+          <div class="customize-form__background-wrapper">
+            <fieldset class="customize-form__fieldset customize-form__fieldset--color">
+              <legend class="customize-form__legend customize-form__legend--color">Цвет</legend>
+              <ul class="customize-form__parameter-list customize-form__parameter-list--checkbox customize-form__parameter-list--color">
+                <li class="customize-form__parameter-item input-checkbox">
                   <input type="checkbox" id="color-white" name="color" value="white" checked>
                   <label class="input-checkbox__label" for="color-white">Белый</label>
                 </li>
-                <li class="page-form__parameter-item input-checkbox">
+                <li class="customize-form__parameter-item input-checkbox">
                   <input type="checkbox" id="color-grey" name="color" value="grey" checked>
                   <label class="input-checkbox__label" for="color-grey">Серый</label>
                 </li>
-                <li class="page-form__parameter-item input-checkbox">
+                <li class="customize-form__parameter-item input-checkbox">
                   <input type="checkbox" id="color-tiffany" name="color" value="tiffany">
                   <label class="input-checkbox__label" for="color-tiffany">«Тиффани»</label>
                 </li>
-                <li class="page-form__parameter-item input-checkbox">
+                <li class="customize-form__parameter-item input-checkbox">
                   <input type="checkbox" id="color-black" name="color" value="black">
                   <label class="input-checkbox__label" for="color-black">Черный</label>
                 </li>
-                <li class="page-form__parameter-item input-checkbox">
+                <li class="customize-form__parameter-item input-checkbox">
                   <input type="checkbox" id="color-pink" name="color" value="pink">
                   <label class="input-checkbox__label" for="color-pink">Розовый</label>
                 </li>
-                <li class="page-form__parameter-item input-checkbox">
+                <li class="customize-form__parameter-item input-checkbox">
                   <input type="checkbox" id="color-orange" name="color" value="orange">
                   <label class="input-checkbox__label" for="color-orange">Оранжевый</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="page-form__fieldset customize-form__user-name">
-            <legend class="page-form__legend">ФИО</legend>
-            <ul class="page-form__parameter-list page-form__parameter-list--text-group">
-              <li class="page-form__parameter-item input-text">
+          <fieldset class="customize-form__fieldset customize-form__fieldset--user-name">
+            <legend class="customize-form__legend">ФИО</legend>
+            <ul class="customize-form__parameter-list customize-form__parameter-list--text-group">
+              <li class="customize-form__parameter-item input-text">
                 <label class="input-text__label" for="user-name">Имя:</label>
                 <input class="input-text__input" type="text" id="user-name" name="user-name" value="" placeholder="Введите ваше имя*" required>
               </li>
-              <li class="page-form__parameter-item input-text">
+              <li class="customize-form__parameter-item input-text">
                 <label class="input-text__label" for="user-surname">Фамилия:</label>
                 <input class="input-text__input" type="text" id="user-surname" name="user-surname" value="" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="page-form__parameter-item input-text">
+              <li class="customize-form__parameter-item input-text">
                 <label class="input-text__label" for="user-second-name">Отчество:</label>
                 <input class="input-text__input" type="text" id="user-second-name" name="user-second-name" value="" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
-          <div class="page-form__background-wrapper">
-            <fieldset class="page-form__fieldset page-form__fieldset--no-legend customize-form__contacts">
+          <div class="customize-form__background-wrapper">
+            <fieldset class="customize-form__fieldset customize-form__fieldset--no-legend customize-form__fieldset--contacts">
               <legend class="visually-hidden">Контактная информация</legend>
-              <ul class="page-form__parameter-list">
-                <li class="page-form__parameter-item input-text customize-form__phone">
+              <ul class="customize-form__parameter-list">
+                <li class="customize-form__parameter-item input-text customize-form__parameter-item--phone">
                   <label class="input-text__label input-text__label--legend" for="user-phone">Тел</label>
                   <input class="input-text__input" type="tel" id="user-phone" name="user-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </li>
-                <li class="page-form__parameter-item input-text customize-form__email">
+                <li class="customize-form__parameter-item input-text customize-form__parameter-item--email">
                   <label class="input-text__label input-text__label--legend" for="user-email">E-mail</label>
                   <input class="input-text__input" type="email" id="user-email" name="user-email" value="" placeholder="Ваш Email*" required>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <ul class="page-form__parameter-list page-form__parameter-list--no-fieldset customize-form__additional">
-            <li class="page-form__parameter-item input-textarea">
+          <ul class="customize-form__parameter-list customize-form__parameter-list--no-fieldset customize-form__parameter-list--additional">
+            <li class="customize-form__parameter-item input-textarea">
               <label class="input-textarea__label input-textarea__label--legend" for="comment-offer">Доп<span class="visually-hidden">олнительная информация к заказу</span></label>
               <textarea class="input-textarea__input" id="comment-offer" name="user-phone" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
           </ul>
-          <div class="page-form__bottom-wrapper">
-            <p class="page-form__footnote">*Поля обязательны для заполнения</p>
-            <button class="page-form__button button" type="submit">Отправить заказ</button>
+          <div class="customize-form__bottom-wrapper">
+            <p class="customize-form__footnote">*Поля обязательны для заполнения</p>
+            <button class="customize-form__button button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
