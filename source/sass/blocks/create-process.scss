@@ -1,0 +1,32 @@
+.create-process {
+  border: 1px solid $grey-border-mobile;
+}
+
+.create-process__heading {
+  margin: 0;
+  padding-left: 91px;
+  margin-top: 21px;
+  margin-bottom: 26px;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.create-process__video {
+  margin-bottom: 35px;
+}
+
+.create-process__description {
+  margin: 0;
+  padding-left: 34px;
+  padding-right: 30px;
+  margin-bottom: 41px;
+
+  color: $black-text;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.catalog__order-button {
+  margin: 0 34px 33px 34px;
+}

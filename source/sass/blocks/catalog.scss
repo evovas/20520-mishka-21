@@ -1,0 +1,17 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  list-style: none;
+}
+
+.catalog__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__create-process {
+  margin-bottom: 58px;
+}

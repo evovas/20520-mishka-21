@@ -1,0 +1,20 @@
+.video {
+  position: relative;
+}
+
+.video__image {
+  display: block;
+}
+
+.video__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 77px;
+  transform: translate(-50%, -50%);
+
+  border: none;
+  background-color: transparent;
+  background-image: url("https://via.placeholder.com/100x77");
+}
