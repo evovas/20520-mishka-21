@@ -76,7 +76,7 @@
   }
 
   .page-header__wrapper {
-    grid-template-columns: 1fr 83px 40.88%;
+    grid-template-columns: 1fr 84px 264px;
     grid-template-rows: min-content min-content;
     grid-template-areas:
       "logo search cart"
@@ -117,7 +117,7 @@
     display: block;
     grid-area: search;
     padding: 0;
-    width: 82px;
+    width: 84px;
     height: 88px;
 
     border-left: 1px solid rgba($black, 0.1);
@@ -148,7 +148,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    grid-template-columns: 447px  252px 84px 266px;
+    grid-template-columns: 447px  1fr 84px 266px;
     grid-template-areas:
       "nav logo search cart"
       "specials specials specials delivery";
@@ -169,10 +169,15 @@
 
   .page-header__specials-list {
     display: flex;
+    margin-top: 19px;
 
     a {
       color: $black;
     }
+  }
+
+  .page-header__specials-item {
+    margin-right: 62px;
   }
 
   .page-header__delivery {

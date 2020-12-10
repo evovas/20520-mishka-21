@@ -64,6 +64,10 @@
   }
 
   .contacts__heading {
+    max-width: 600px;
+    margin-top: 23px;
+    margin-bottom: 49px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -72,6 +76,7 @@
     display: grid;
     grid-template-columns: 320px 320px;
     grid-column-gap: 13px;
+    margin-bottom: 48px;
 
     font-size: 17px;
     line-height: 30px;
@@ -82,11 +87,11 @@
   }
 
   .contacts__name {
-    width: 81px;
+    width: 78px;
   }
 
   .contacts__value {
-    width: 239px;
+    width: 242px;
   }
 
   .contacts__map {
@@ -98,6 +103,7 @@
   .contacts__write-button {
     width: auto;
     min-width: 230px;
+    margin-bottom: 0;
   }
 }
 
@@ -107,6 +113,7 @@
       "information map"
       "button map"
       ". map";
+    column-gap: 25px;
     width: 1150px;
     padding: 0 50px;
     padding-left: 225px;
@@ -119,18 +126,30 @@
     padding: 0;
   }
 
+  .contacts__heading {
+    margin-top: 79px;
+    margin-bottom: 35px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .contacts__list {
     grid-template-columns: 320px;
     grid-column-gap: 13px;
+    grid-row-gap: 30px;
+    margin-bottom: 84px;
   }
 
   .contacts__map {
     grid-area: map;
     width: 527px;
     height: 457px;
+    margin: 0;
   }
 
   .contacts__write-button {
     grid-area: button;
+    margin-left: 0;
   }
 }

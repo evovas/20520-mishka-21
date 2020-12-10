@@ -7,9 +7,13 @@
 }
 
 .modal-add-cart__heading {
+  margin-top: 29px;
+  margin-bottom: 14px;
+  padding-left: 59px;
+  padding-right: 45px;
+
   font-size: 25px;
   line-height: 30px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -17,11 +21,33 @@
   margin-bottom: 31px;
 }
 
-.product-parameter__name {
-  margin-bottom: 21px;
-}
-
 .modal-add-cart__button {
   width: 100%;
-  margin-bottom: 46px;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  margin-bottom: 45px;
+
+  font-size: 17px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-add-cart__heading {
+    padding: 0;
+    margin-top: 36px;
+    margin-bottom: 13px;
+
+    font-size: 30px;
+    line-height: 57px;
+    text-align: center;
+  }
+
+  .modal-add-cart__form {
+    padding-left: 16px;
+    padding-right: 15px;
+  }
+
+  .modal-add-cart__button {
+    margin-bottom: 47px;
+  }
 }
