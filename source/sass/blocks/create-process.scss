@@ -1,96 +1,112 @@
+.create-process {
+  padding-left: 34px;
+  padding-right: 34px;
+  border: 1px solid $grey-border-mobile;
+}
+
 .create-process__heading {
   margin: 0;
-  padding-left: 91px;
-  padding-top: 21px;
-  padding-bottom: 26px;
+  padding-left: 57px;
+  margin-top: 21px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   line-height: 24px;
+}
 
-  border: 1px solid $grey-border-mobile;
-  border-bottom: none;
+.create-process__video {
+  margin-left: -35px;
+  margin-right: -35px;
+  margin-bottom: 35px;
 }
 
 .create-process__description {
   margin: 0;
-  padding: 35px 30px 0 34px;
+  margin-bottom: 41px;
+  margin-right: -3px;
 
   color: $black-text;
   font-size: 13px;
   line-height: 24px;
-
-  border-left: 1px solid $grey-border-mobile;
-  border-right: 1px solid $grey-border-mobile;
 }
 
-.create-process__button-wrapper {
-  padding: 41px 34px 33px 34px;
-
-  border: 1px solid $grey-border-mobile;
-  border-top: none;
+.catalog__order-button {
+  margin-bottom: 33px;
 }
 
 @media (min-width: $tablet-width) {
   .create-process {
     display: grid;
-  }
-
-  .create-process__video {
-    order: -1;
+    padding-left: 42px;
+    padding-right: 42px;
   }
 
   .create-process__heading {
-    padding-left: 107px;
-    padding-top: 41px;
-    padding-bottom: 0;
+    padding-left: 65px;
+    margin-top: 0;
+    margin-bottom: 25px;
 
     font-size: 20px;
   }
 
+  .create-process__video {
+    order: -1;
+    margin: -1px -43px 41px -43px;
+
+    border-bottom: 1px solid $grey-border-mobile;
+  }
+
   .create-process__description {
-    padding: 24px 40px 0 40px;
+    margin-right: 0;
+    margin-bottom: 40px;
 
     font-size: 15px;
     line-height: 30px;
   }
 
-  .create-process__button-wrapper {
-    padding: 41px 42px 46px 42px;
+  .catalog__order-button {
+    margin-bottom: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .create-process {
-    display: grid;
     grid-template-columns: 683px 1fr;
+    column-gap: 79px;
     grid-template-areas:
       "video heading"
       "video description"
-      "video button";
-  }
-
-  .create-process__video {
-    grid-area: video;
+      "video button"
+      "video .";
+    padding-left: 0;
+    padding-right: 57px;
   }
 
   .create-process__heading {
     grid-area: heading;
-    padding: 96px 110px 0 79px;
+    margin: 0;
+    padding: 0;
+    margin-top: 96px;
+    margin-bottom: 27px;
+  }
 
-    border-left: none;
+  .create-process__video {
+    grid-area: video;
+    margin: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+    border: none;
   }
 
   .create-process__description {
     grid-area: description;
-    padding: 27px 36px 0 79px;
-
-    border-left: none;
+    margin-bottom: 51px;
   }
 
-  .create-process__button-wrapper {
+  .catalog__order-button {
     grid-area: button;
-    padding: 51px 57px 60px 80px;
-
-    border-left: none;
+    margin-bottom: 60px;
   }
 }
