@@ -10,32 +10,19 @@
 }
 
 .social-list__link {
-  &::before {
-    content: "";
-    display: block;
-
-    background-color: grey; // временно
-  }
-
   &--instagram {
-    &::before {
-      width: 22px;
-      height: 21px;
-    }
+    width: 22px;
+    height: 21px;
   }
 
   &--facebook {
-    &::before {
-      width: 15px;
-      height: 28px;
-    }
+    width: 15px;
+    height: 28px;
   }
 
   &--twitter {
-    &::before {
-      width: 23px;
-      height: 20px;
-    }
+    width: 23px;
+    height: 20px;
   }
 }
 

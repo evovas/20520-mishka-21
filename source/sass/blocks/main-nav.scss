@@ -6,6 +6,10 @@
   background-color: transparent;
   border: none;
 
+  &--no-js {
+    display: none;
+  }
+
   &--open {
     width: 20px;
     height: 14px;
