@@ -6,6 +6,10 @@
   background-color: transparent;
   border: none;
 
+  &--no-js {
+    display: none;
+  }
+
   &--open {
     width: 20px;
     height: 14px;
@@ -70,5 +74,25 @@
   .main-nav__link-wrapper {
     width: auto;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    font-size: 17px;
+  }
+
+  .main-nav__item {
+    padding-top: 33px;
+    padding-bottom: 31px;
+
+    &:not(:first-child) {
+      padding-left: 35px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 35px;
+      border-right: 1px solid rgba($black, 0.1);
+    }
   }
 }

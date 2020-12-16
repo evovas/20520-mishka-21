@@ -17,3 +17,62 @@
 
   border-bottom: 6px solid $grey-border-mobile;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    display: grid;
+  }
+
+  .page-main__header {
+    margin-bottom: 52px;
+  }
+
+  .page-main__week-offer {
+    padding-bottom: 52px;
+    margin-bottom: 56px;
+
+    border-bottom: 17px solid $grey-border-mobile;
+  }
+
+  .page-main__about-us {
+    margin-bottom: 83px;
+  }
+
+  .page-main__reviews {
+    margin-bottom: 46px;
+
+    border-bottom: 17px solid $grey-border-mobile;
+  }
+
+  .page-main__contacts {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    margin-bottom: 71px;
+  }
+
+  .page-main__week-offer {
+    padding-bottom: 73px;
+    margin-bottom: 68px;
+
+    border-bottom: 23px solid $grey-border-mobile;
+  }
+
+  .page-main__about-us {
+    margin-bottom: 89px;
+  }
+
+  .page-main__reviews {
+    margin-bottom: 71px;
+
+    border-bottom: 23px solid $grey-border-mobile;
+  }
+
+  .page-main__contacts {
+    margin: 0 auto;
+    margin-bottom: 105px;
+  }
+}

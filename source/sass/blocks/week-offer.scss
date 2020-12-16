@@ -34,7 +34,7 @@
 }
 
 .week-offer__image {
-  margin-bottom: 21px;
+  margin-bottom: 27px;
 }
 
 .week-offer__price {
@@ -64,6 +64,8 @@
 
   .week-offer__heading {
     grid-area: heading;
+    margin-top: 6px;
+    margin-right: 13px;
 
     line-height: 17px;
     text-align: center;
@@ -72,6 +74,7 @@
   .week-offer__name {
     grid-area: name;
     padding-right: 20px;
+    margin-bottom: 38px;
 
     font-size: 43px;
     line-height: 50px;
@@ -79,6 +82,8 @@
 
   .week-offer__description {
     grid-area: description;
+    margin-top: 0;
+    margin-bottom: 39px;
 
     font-size: 17px;
     line-height: 30px;
@@ -86,10 +91,13 @@
 
   .week-offer__characteristics {
     grid-area: characteristics;
+    margin-bottom: 57px;
   }
 
   .week-offer__image {
     grid-area: image;
+    margin-top: 12px;
+    margin-bottom: 0;
     width: 334px;
     height: 404px;
     margin-left: 42px;
@@ -97,46 +105,62 @@
 
   .week-offer__price {
     grid-area: price;
+    margin-bottom: 31px;
+
+    font-size: 20px;
   }
 
   .week-offer__button {
     grid-area: button;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .week-offer {
     grid-template-areas:
-      ". . image"
       "heading . image"
       ". description image"
       ". characteristics image"
       ". price image"
-      ". button image";
+      ". button image"
+      ". . image";
     grid-template-columns: 175px 292px 1fr;
   }
 
   .week-offer__heading {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 69px;
   }
 
   .week-offer__name {
     grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     z-index: 2;
+    margin-top: 61px;
+    margin-bottom: 35px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
   .week-offer__description {
-    padding-top: 153px;
+    margin-bottom: 51px;
+  }
+
+  .week-offer__characteristics {
+    margin-bottom: 111px;
   }
 
   .week-offer__image {
     width: 525px;
     height: 636px;
+    margin: 0;
     margin-left: 58px;
+  }
+
+  .week-offer__price {
+    margin-bottom: 32px;
   }
 }

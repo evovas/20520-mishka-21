@@ -23,7 +23,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__contacts {
-    margin: 0 auto;
+  .page__header {
+    margin-bottom: -44px;
   }
 }

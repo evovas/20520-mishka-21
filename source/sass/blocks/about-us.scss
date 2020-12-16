@@ -7,6 +7,7 @@
 
 .about-us__fact-list {
   display: grid;
+  row-gap: 83px;
   margin: 0;
   padding: 0;
 
@@ -20,14 +21,12 @@
   &:nth-child(2n) {
     order: 2;
   }
-
-  &:not(:last-child) {
-    margin-bottom: 83px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .about-us__heading {
+    margin-bottom: 98px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -35,6 +34,7 @@
   .about-us__fact-list {
     grid-template-columns: 314px 324px;
     column-gap: 20px;
+    row-gap: 110px;
 
     font-size: 20px;
     line-height: 22px;
@@ -51,5 +51,16 @@
   .about-us {
     padding-left: 225px;
     padding-right: 225px;
+  }
+
+  .about-us__heading {
+    margin-bottom: 97px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__fact-list {
+    column-gap: 36px;
   }
 }

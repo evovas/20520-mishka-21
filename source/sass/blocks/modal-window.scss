@@ -1,4 +1,6 @@
 .modal-window {
+  z-index: 10000;
+
   background-color: rgba($white, 0.9);
 }
 
@@ -14,6 +16,6 @@
 @media (min-width: $tablet-width) {
   .modal-window__wrapper {
     width: 566px;
-    padding: 0 108px;
+    padding: 0 93px 0 92px;
   }
 }

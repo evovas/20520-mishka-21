@@ -7,6 +7,7 @@
 
 .product-parameter__name {
   display: block;
+  margin-bottom: 23px;
 
   color: $black-text;
   font-size: 15px;
@@ -34,11 +35,24 @@
 .product-parameter__value {
   display: block;
   width: 82px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 13px;
+  padding-bottom: 11px;
 
+  color: $black-text;
   text-align: center;
   font-weight: 700;
 
   border: 2px solid rgba($black-text, 0.1);
+}
+
+@media (min-width: $tablet-width) {
+  .product-parameter__name {
+    margin-bottom: 18px;
+
+    font-size: 17px;
+  }
+
+  .product-parameter__value {
+    width: 112px;
+  }
 }

@@ -45,6 +45,8 @@
 .reviews__name {
   display: block;
   margin-bottom: 3px;
+
+  color: $black;
   font-weight: 700;
 }
 
@@ -88,14 +90,21 @@
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
+    background-image: url("https://via.placeholder.com/350x457");
+    background-repeat: no-repeat;
   }
 
   .reviews__heading {
     max-width: 450px;
+    margin-top: 83px;
     margin-bottom: 38px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .reviews__list {
+    margin-bottom: 116px;
   }
 
   .reviews__text {
@@ -105,28 +114,65 @@
   }
 
   .reviews__author {
+    max-width: 500px;
+  }
+
+  .reviews__name {
     font-size: 18px;
   }
 
   .reviews__control-wrapper {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 50px;
+    bottom: 130px;
   }
 
   .reviews__control-button {
+    height: 26px;
+    width: 88px;
+    padding: 0;
+    margin: 0;
+
     border: none;
   }
 
   .reviews__write-button {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 50px;
+    top: 79px;
+    max-width: 218px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 225px;
+
+    background-position: 50px 0;
+  }
+
+  .reviews__heading {
+    margin-top: 77px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__list {
+    margin-bottom: 162px;
+  }
+
+  .reviews__text {
+    margin-bottom: 43px;
+  }
+
+  .reviews__name {
+    font-size: 17px;
+  }
+
+  .reviews__control-wrapper {
+    bottom: 178px;
   }
 }
