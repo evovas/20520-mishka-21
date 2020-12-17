@@ -1,3 +1,7 @@
+.input-text {
+  position: relative;
+}
+
 .input-text__label {
   display: block;
 
@@ -48,6 +52,20 @@
   }
 }
 
+.input-text__icon {
+  position: absolute;
+
+  &--phone {
+    right: 7px;
+    bottom: 17px;
+  }
+
+  &--email {
+    right: 3px;
+    bottom: 14px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .input-text {
     position: relative;
@@ -83,12 +101,34 @@
 
     font-size: 19px;
   }
+
+  .input-text__icon {
+    &--phone {
+      right: 26px;
+      bottom: 16px;
+    }
+
+    &--email {
+      right: 22px;
+      bottom: 15px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .input-text__label {
     &--legend {
-      left: -127px;
+      left: -115px;
+    }
+  }
+
+  .input-text__icon {
+    &--phone {
+      right: 8px;
+    }
+
+    &--email {
+      right: 4px;
     }
   }
 }
