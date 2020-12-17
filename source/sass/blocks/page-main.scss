@@ -33,6 +33,14 @@
 
   .page-main__header {
     margin-bottom: 52px;
+
+    &--form {
+      margin-bottom: 54px;
+    }
+
+    &--index {
+      margin-bottom: 52px;
+    }
   }
 
   .page-main__week-offer {

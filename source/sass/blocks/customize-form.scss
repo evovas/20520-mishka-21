@@ -132,6 +132,7 @@
   .customize-form__description {
     width: 768px;
     padding: 0 50px;
+    margin-bottom: 65px;
 
     font-size: 17px;
     line-height: 30px;
@@ -139,9 +140,14 @@
 
   .customize-form__background-wrapper {
     padding: 50px 0;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
 
     background-color: $grey-footer;
+
+    &--contacts {
+      padding-top: 48px;
+      margin-bottom: 50px;
+    }
   }
 
   .customize-form__fieldset {
@@ -152,7 +158,7 @@
     margin-bottom: 50px;
 
     &--type {
-      margin-bottom: 50px;
+      margin-bottom: 51px;
     }
 
     &--color {
@@ -178,7 +184,8 @@
     &--color {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 20px;
+      grid-column-gap: 22px;
+      grid-row-gap: 24px;
     }
 
     &--additional {
@@ -187,6 +194,18 @@
   }
 
   .customize-form__parameter-item {
+    &--radio:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &--checkbox:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--text:not(:last-child) {
+      margin-bottom: 23px;
+    }
+
     &--phone {
       margin-bottom: 24px;
     }
@@ -194,7 +213,7 @@
 
   .customize-form__legend {
     position: absolute;
-    top: 23px;
+    top: 15px;
     left: 50px;
     width: auto;
     margin-bottom: 0;
@@ -232,9 +251,9 @@
   .customize-form__button {
     order: 1;
     width: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
   }
 }
 

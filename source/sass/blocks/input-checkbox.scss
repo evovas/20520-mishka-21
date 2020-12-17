@@ -45,3 +45,27 @@
     border: 2px solid $black-text;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .input-checkbox__input {
+    width: 52px;
+    height: 52px;
+
+    &:checked + label::after {
+      top: 16px;
+      left: 11px;
+      width: 31px;
+      height: 22px;
+    }
+  }
+
+  .input-checkbox__label {
+    font-size: 19px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      margin-right: 30px;
+    }
+  }
+}

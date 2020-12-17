@@ -43,3 +43,28 @@
     border-radius: 50%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .input-radio__input {
+    width: 50px;
+    height: 50px;
+
+    &:checked + label::after {
+      top: 15px;
+      left: 18px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .input-radio__label {
+    font-size: 19px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      margin-left: 3px;
+      margin-right: 27px;
+    }
+  }
+}

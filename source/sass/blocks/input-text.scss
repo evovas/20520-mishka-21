@@ -34,8 +34,6 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 17px;
-  font-style: normal;
-  font-weight: normal;
 
   &::placeholder {
     color: rgba($black, 0.3);
@@ -58,7 +56,9 @@
   }
 
   .input-text__label {
-    margin-right: 24px;
+    margin-right: 26px;
+
+    font-size: 19px;
 
     &--legend {
       position: absolute;
@@ -69,10 +69,19 @@
 
       background-image: none;
 
+      font-size: 17px;
+
       &::after {
         content: none;
       }
     }
+  }
+
+  .input-text__input {
+    padding-left: 18px;
+    padding-bottom: 11px;
+
+    font-size: 19px;
   }
 }
 
