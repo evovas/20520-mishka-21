@@ -1,5 +1,13 @@
 .page-main__header {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
+
+  &--form {
+    margin-bottom: 17px;
+  }
+
+  &--index {
+    margin-bottom: 31px;
+  }
 }
 
 .page-main__week-offer {

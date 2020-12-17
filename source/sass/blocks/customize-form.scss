@@ -8,7 +8,7 @@
   width: 320px;
   padding: 0 30px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 
   color: $black-text;
   font-size: 13px;
@@ -25,20 +25,12 @@
 
   border: none;
 
-  &--type {
+  &--user-name {
     margin-bottom: 31px;
   }
 
-  &--color {
-    margin-bottom: 33px;
-  }
-
-  &--user-name {
-    margin-bottom: 35px;
-  }
-
   &--contacts {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 }
 
@@ -49,24 +41,28 @@
 
   color: $mint-main;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, $white, $white 60px, transparent 60px, transparent), linear-gradient(transparent, transparent 10px, $mint-border 10px, $mint-border 11px, transparent 11px, transparent);
+  background-image: linear-gradient(to right, $white, $white 60px, transparent 60px, transparent), linear-gradient(transparent, transparent 11px, $mint-border 11px, $mint-border 12px, transparent 12px, transparent);
 
   &::after {
     content: "";
 
     display: inline-block;
-    width: 19px;
+    width: 16px;
     height: 18px;
 
     background-color: $white;
   }
 
   &--type {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   &--color {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+  }
+
+  &--user-name {
+    margin-bottom: 28px;
   }
 }
 
@@ -76,10 +72,6 @@
 
   list-style: none;
 
-  &--text-group li:not(:last-child) {
-    margin-bottom: 22px;
-  }
-
   &--no-fieldset {
     display: block;
     width: 320px;
@@ -88,13 +80,25 @@
   }
 
   &--additional {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
 }
 
 .customize-form__parameter-item {
+  &--radio:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &--checkbox:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  &--text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   &--phone {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 }
 
@@ -106,8 +110,9 @@
 
 .customize-form__footnote {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
+  color: $black-text;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -115,7 +120,12 @@
 
 .customize-form__button {
   width: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
