@@ -5,6 +5,9 @@
 .input-text__label {
   display: block;
 
+  font-size: 17px;
+  line-height: 24px;
+
   &--legend {
     min-width: 60px;
 
@@ -25,30 +28,41 @@
 }
 
 .input-text__input {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   padding: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
 
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $black;
-
-  font-family: inherit;
-  font-size: 17px;
-  line-height: 17px;
+  outline: none;
 
   &::placeholder {
     color: rgba($black, 0.3);
   }
 
   &--phone {
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   &--email {
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $mint-border;
   }
 }
 
@@ -77,10 +91,11 @@
     margin-right: 26px;
 
     font-size: 19px;
+    line-height: 27px;
 
     &--legend {
       position: absolute;
-      top: 18px;
+      top: 13px;
       left: -167px;
 
       min-width: auto;
@@ -97,9 +112,18 @@
 
   .input-text__input {
     padding-left: 18px;
-    padding-bottom: 11px;
+    padding-bottom: 13px;
 
     font-size: 19px;
+    line-height: 27px;
+
+    &--phone {
+      padding-bottom: 12px;
+    }
+
+    &--email {
+      padding-bottom: 10px;
+    }
   }
 
   .input-text__icon {

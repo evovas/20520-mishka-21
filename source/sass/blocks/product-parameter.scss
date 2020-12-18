@@ -24,8 +24,22 @@
   list-style: none;
 }
 
+.product-parameter__item {
+  position: relative;
+}
+
 .product-parameter__input {
-  display: none;
+  position: absolute;
+  width: 82px;
+  height: 52px;
+  border-radius: 0;
+
+  opacity: 0;
+
+  &:hover + label,
+  &:focus + label {
+    border: 2px solid rgba($black-text, 0.3);
+  }
 
   &:checked + label {
     border: 2px solid $mint-main;
@@ -50,6 +64,10 @@
     margin-bottom: 18px;
 
     font-size: 17px;
+  }
+
+  .product-parameter__input {
+    width: 112px;
   }
 
   .product-parameter__value {

@@ -134,6 +134,16 @@
     margin: 0;
 
     border: none;
+
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .reviews__write-button {

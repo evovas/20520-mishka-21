@@ -35,6 +35,15 @@
 
 .contacts__value {
   margin: 0;
+
+  a {
+    color: $black-text;
+  }
+
+  a:hover,
+  a:focus {
+    color: $mint-special-2;
+  }
 }
 
 .contacts__map {

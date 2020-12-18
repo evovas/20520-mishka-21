@@ -12,6 +12,15 @@
 
   opacity: 0;
 
+  &:hover + label::before,
+  &:focus + label::before {
+    border: 2px solid $mint-border;
+  }
+
+  &:active + label::before {
+    border: 2px solid rgba($black, 0.3);
+  }
+
   &:checked + label::after {
     content: "";
 
@@ -41,6 +50,14 @@
     background-color: transparent;
     border: 2px solid $black-text;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 2px solid $mint-border;
+  }
+
+  &:active::before {
+    border: 2px solid rgba($black, 0.3);
   }
 }
 
