@@ -1,5 +1,13 @@
 .page-main__header {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
+
+  &--form {
+    margin-bottom: 17px;
+  }
+
+  &--index {
+    margin-bottom: 31px;
+  }
 }
 
 .page-main__week-offer {
@@ -24,7 +32,15 @@
   }
 
   .page-main__header {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
+
+    &--form {
+      margin-bottom: 54px;
+    }
+
+    &--index {
+      margin-bottom: 52px;
+    }
   }
 
   .page-main__week-offer {
@@ -51,7 +67,15 @@
 
 @media (min-width: $desktop-width) {
   .page-main__header {
-    margin-bottom: 71px;
+    margin-bottom: 70px;
+
+    &--form {
+      margin-bottom: 97px;
+    }
+
+    &--index {
+      margin-bottom: 71px;
+    }
   }
 
   .page-main__week-offer {

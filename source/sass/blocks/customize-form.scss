@@ -8,7 +8,7 @@
   width: 320px;
   padding: 0 30px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 
   color: $black-text;
   font-size: 13px;
@@ -25,20 +25,12 @@
 
   border: none;
 
-  &--type {
+  &--user-name {
     margin-bottom: 31px;
   }
 
-  &--color {
-    margin-bottom: 33px;
-  }
-
-  &--user-name {
-    margin-bottom: 35px;
-  }
-
   &--contacts {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 }
 
@@ -49,23 +41,27 @@
 
   color: $mint-main;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, $white, $white 60px, transparent 60px, transparent), linear-gradient(transparent, transparent 10px, $mint-border 10px, $mint-border 11px, transparent 11px, transparent);
+  background-image: linear-gradient(to right, $white, $white 60px, transparent 60px, transparent), linear-gradient(transparent, transparent 11px, $mint-border 11px, $mint-border 12px, transparent 12px, transparent);
 
   &::after {
     content: "";
 
     display: inline-block;
-    width: 19px;
+    width: 16px;
     height: 18px;
 
     background-color: $white;
   }
 
   &--type {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   &--color {
+    margin-bottom: 23px;
+  }
+
+  &--user-name {
     margin-bottom: 25px;
   }
 }
@@ -76,10 +72,6 @@
 
   list-style: none;
 
-  &--text-group li:not(:last-child) {
-    margin-bottom: 22px;
-  }
-
   &--no-fieldset {
     display: block;
     width: 320px;
@@ -88,13 +80,25 @@
   }
 
   &--additional {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
 }
 
 .customize-form__parameter-item {
+  &--radio:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &--checkbox:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  &--text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   &--phone {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 }
 
@@ -106,8 +110,9 @@
 
 .customize-form__footnote {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
+  color: $black-text;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -115,13 +120,19 @@
 
 .customize-form__button {
   width: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .customize-form__description {
     width: 768px;
     padding: 0 50px;
+    margin-bottom: 65px;
 
     font-size: 17px;
     line-height: 30px;
@@ -129,9 +140,14 @@
 
   .customize-form__background-wrapper {
     padding: 50px 0;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
 
     background-color: $grey-footer;
+
+    &--contacts {
+      padding-top: 48px;
+      margin-bottom: 50px;
+    }
   }
 
   .customize-form__fieldset {
@@ -142,7 +158,7 @@
     margin-bottom: 50px;
 
     &--type {
-      margin-bottom: 50px;
+      margin-bottom: 51px;
     }
 
     &--color {
@@ -168,7 +184,8 @@
     &--color {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 20px;
+      grid-column-gap: 22px;
+      grid-row-gap: 24px;
     }
 
     &--additional {
@@ -177,6 +194,18 @@
   }
 
   .customize-form__parameter-item {
+    &--radio:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &--checkbox:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--text:not(:last-child) {
+      margin-bottom: 23px;
+    }
+
     &--phone {
       margin-bottom: 24px;
     }
@@ -184,7 +213,7 @@
 
   .customize-form__legend {
     position: absolute;
-    top: 23px;
+    top: 15px;
     left: 50px;
     width: auto;
     margin-bottom: 0;
@@ -222,9 +251,9 @@
   .customize-form__button {
     order: 1;
     width: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -241,40 +270,35 @@
     }
 
     &--color {
-      grid-template-columns: min-content min-content min-content;  //временно для сетки
+      grid-template-columns: 209px 209px 209px;
       justify-content: space-between;
-      grid-column-gap: 20px;
+    }
+
+    &--additional {
+      margin-bottom: 49px;
     }
   }
 
   .customize-form__fieldset {
     width: 1150px;
     padding: 0 225px;
+
+    &--type {
+      margin-bottom: 50px;
+    }
+
+    &--color {
+      padding-right: 190px;
+    }
   }
 
   .customize-form__legend {
-    top: 23px;
-    left: 97px;
+    top: 15px;
+    left: 111px;
   }
 
   .customize-form__bottom-wrapper {
     width: 1150px;
     padding: 0 225px;
-  }
-
-  .customize-form__footnote {
-    order: 2;
-    margin-top: 12px;
-
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  .customize-form__button {
-    order: 1;
-    width: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 55px;
   }
 }

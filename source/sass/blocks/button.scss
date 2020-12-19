@@ -14,6 +14,17 @@
 
   background-color: transparent;
   border: 2px solid $black-text;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $black-text;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 
   &--mint {
     color: $white;
@@ -21,6 +32,11 @@
 
     background-color: $mint-main;
     border: none;
+
+    &:hover,
+    &:focus {
+      background-color: $mint-main;
+    }
   }
 }
 
