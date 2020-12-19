@@ -3,7 +3,7 @@
 
   &--legend {
     min-width: 60px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 
     text-transform: uppercase;
     color: $mint-main;
@@ -24,13 +24,24 @@
 .input-textarea__input {
   width: 100%;
   min-height: 142px;
-  padding: 17px;
+  padding: 15px;
   resize: none;
 
-  border: 2px solid $black;
+  border: 2px solid $black-text;
+
+  font-family: inherit;
+  font-size: 17px;
+
+  outline: none;
 
   &::placeholder {
     color: rgba($black, 0.3);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $mint-border;
   }
 }
 
@@ -58,12 +69,16 @@
       }
     }
   }
+
+  .input-textarea__input {
+    font-size: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .input-textarea__label {
     &--legend {
-      left: -127px;
+      left: -115px;
     }
   }
 }

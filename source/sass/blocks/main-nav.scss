@@ -35,6 +35,17 @@
   }
 }
 
+.main-nav__link {
+  &:hover span,
+  &:focus span {
+    opacity: 0.6;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__link-wrapper {
   display: block;
   width: 320px;
@@ -83,16 +94,29 @@
   }
 
   .main-nav__item {
-    padding-top: 33px;
-    padding-bottom: 31px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    a {
+      padding-top: 33px;
+      padding-bottom: 31px;
+    }
 
     &:not(:first-child) {
-      padding-left: 35px;
+      padding-left: 0;
+
+      a {
+        padding-left: 35px;
+      }
     }
 
     &:not(:last-child) {
-      padding-right: 35px;
+      padding-right: 0;
       border-right: 1px solid rgba($black, 0.1);
+
+      a {
+        padding-right: 35px;
+      }
     }
   }
 }

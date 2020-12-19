@@ -42,10 +42,20 @@
 
   &:nth-child(odd) {
     background-color: $mint-main;
+
+    &:hover,
+    &:focus {
+      background-color: $mint-main-2;
+    }
   }
 
   &:nth-child(even) {
     background-color: $mint-special;
+
+    &:hover,
+    &:focus {
+      background-color: $mint-special-2;
+    }
   }
 
   a {
@@ -101,7 +111,19 @@
     align-items: flex-end;
     width: 768px;
     padding: 0 50px;
-    margin: 0 auto;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: 2;
+      bottom: -7px;
+      width: calc(101% - 100px);
+      transform: translateX(-5px);
+      height: 7px;
+
+      background-color: $white;
+    }
   }
 
   .content-header__category-item {
@@ -109,14 +131,15 @@
 
     font-size: 20px;
     line-height: 30px;
+    transform: translateY(5px);
 
     a {
-      padding-top: 25px;
-      padding-bottom: 34px;
+      padding-bottom: 40px;
+    }
 
-      &:hover {
-        padding-bottom: 39px;
-      }
+    &:hover,
+    &:focus {
+      transform: translateY(0);
     }
   }
 

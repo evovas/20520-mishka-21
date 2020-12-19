@@ -1,5 +1,12 @@
+.input-text {
+  position: relative;
+}
+
 .input-text__label {
   display: block;
+
+  font-size: 17px;
+  line-height: 24px;
 
   &--legend {
     min-width: 60px;
@@ -21,16 +28,55 @@
 }
 
 .input-text__input {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
-  padding: 17px 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
 
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $black;
+  outline: none;
 
   &::placeholder {
     color: rgba($black, 0.3);
+  }
+
+  &--phone {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &--email {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $mint-border;
+  }
+}
+
+.input-text__icon {
+  position: absolute;
+
+  &--phone {
+    right: 7px;
+    bottom: 17px;
+  }
+
+  &--email {
+    right: 3px;
+    bottom: 14px;
   }
 }
 
@@ -42,20 +88,53 @@
   }
 
   .input-text__label {
-    margin-right: 24px;
+    margin-right: 26px;
+
+    font-size: 19px;
+    line-height: 27px;
 
     &--legend {
       position: absolute;
-      top: 18px;
+      top: 13px;
       left: -167px;
 
       min-width: auto;
 
       background-image: none;
 
+      font-size: 17px;
+
       &::after {
         content: none;
       }
+    }
+  }
+
+  .input-text__input {
+    padding-left: 18px;
+    padding-bottom: 13px;
+
+    font-size: 19px;
+    line-height: 27px;
+
+    &--phone {
+      padding-bottom: 12px;
+    }
+
+    &--email {
+      padding-bottom: 10px;
+    }
+  }
+
+  .input-text__icon {
+    &--phone {
+      right: 26px;
+      bottom: 16px;
+    }
+
+    &--email {
+      right: 22px;
+      bottom: 15px;
     }
   }
 }
@@ -63,7 +142,17 @@
 @media (min-width: $desktop-width) {
   .input-text__label {
     &--legend {
-      left: -127px;
+      left: -115px;
+    }
+  }
+
+  .input-text__icon {
+    &--phone {
+      right: 8px;
+    }
+
+    &--email {
+      right: 4px;
     }
   }
 }
