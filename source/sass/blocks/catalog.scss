@@ -1,14 +1,14 @@
 .catalog__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   list-style: none;
 }
 
 .catalog__item {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
