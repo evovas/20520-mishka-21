@@ -10,7 +10,11 @@
   <header class="page__header page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина MiSHKA">
+        </picture>
       </a>
       <a class="page-header__search" href="#" aria-label="Поиск по сайту"><span class="page-header__search-text page-header__link-wrapper">Поиск по сайту</span></a>
       <a class="page-header__cart" href="#"><span class="page-header__link-wrapper"> Корзина: пока пуста</span></a>

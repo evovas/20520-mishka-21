@@ -34,7 +34,7 @@
 }
 
 .week-offer__image {
-  margin-bottom: 27px;
+  margin-bottom: 21px;
 }
 
 .week-offer__price {
@@ -74,7 +74,7 @@
   .week-offer__name {
     grid-area: name;
     padding-right: 20px;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
 
     font-size: 43px;
     line-height: 50px;
@@ -94,8 +94,11 @@
     margin-bottom: 57px;
   }
 
-  .week-offer__image {
+  .week-offer__image-wrapper {
     grid-area: image;
+  }
+
+  .week-offer__image {
     margin-top: 12px;
     margin-bottom: 0;
     width: 334px;

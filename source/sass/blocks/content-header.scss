@@ -12,6 +12,11 @@
     min-height: 488px;
 
     background-image: url("../img/content-header-mobile.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content-header-mobile@2x.jpg");
+    }
   }
 }
 
@@ -82,7 +87,11 @@
     &--index {
       min-height: 747px;
 
-      background-image: url("../img/content-header-tablet.jpg");
+      background-image: url("../img/content-header.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/content-header@2x.jpg");
+      }
     }
   }
 
@@ -134,11 +143,12 @@
     transform: translateY(5px);
 
     a {
+      padding-top: 26px;
       padding-bottom: 40px;
     }
 
     &:hover,
-    &:focus {
+    &:focus-within {
       transform: translateY(0);
     }
   }
@@ -172,6 +182,12 @@
 
   .content-header__category-list {
     width: 1150px;
+  }
+
+  .content-header__category-item {
+    a {
+      padding-bottom: 38px;
+    }
   }
 
   .content-header__category-wrapper {
