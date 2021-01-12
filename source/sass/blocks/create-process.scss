@@ -1,7 +1,27 @@
 .create-process {
+  position: relative;
   padding-left: 34px;
   padding-right: 34px;
   border: 1px solid $grey-border-mobile;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    left: -1px;
+    bottom: -1px;
+    width: 260px;
+    height: 257px;
+  }
+
+  &:hover::before {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active::before {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .create-process__heading {
@@ -37,8 +57,13 @@
 @media (min-width: $tablet-width) {
   .create-process {
     display: grid;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 41px;
+    padding-right: 41px;
+
+    &::before {
+      width: 668px;
+      height: 287px;
+    }
   }
 
   .create-process__heading {
@@ -51,7 +76,7 @@
 
   .create-process__video {
     order: -1;
-    margin: -1px -43px 41px -43px;
+    margin: -1px -42px 40px -42px;
 
     border-bottom: 1px solid $grey-border-mobile;
   }
@@ -65,21 +90,28 @@
   }
 
   .catalog__order-button {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .create-process {
     grid-template-columns: 683px 1fr;
-    column-gap: 79px;
+    column-gap: 78px;
     grid-template-areas:
       "video heading"
       "video description"
       "video button"
       "video .";
     padding-left: 0;
-    padding-right: 57px;
+    padding-right: 56px;
+
+    &::before {
+      left: auto;
+      right: -1px;
+      width: 367px;
+      height: 455px;
+    }
   }
 
   .create-process__heading {
