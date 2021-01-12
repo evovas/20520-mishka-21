@@ -10,7 +10,11 @@
     <header class="page__header page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MiSHKA">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина MiSHKA">
+          </picture>
         </a>
         <a class="page-header__search" href="#" aria-label="Поиск по сайту">
           <div class="page-header__link-wrapper">
@@ -70,7 +74,13 @@
             <dd class="characteristics-list__definition">15 см</dd>
           </div>
         </dl>
-        <img class="week-offer__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Три вязаные корзинки в руках">
+        <div class="week-offer__image-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="week-offer__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Три вязаные корзинки в руках">
+          </picture>
+        </div>
         <p class="week-offer__price">Цена: 990 руб.</p>
         <a class="week-offer__button button" href="#">Заказать</a>
       </section>

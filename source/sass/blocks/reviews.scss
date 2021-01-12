@@ -90,8 +90,13 @@
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
-    background-image: url("https://via.placeholder.com/350x457");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__heading {
