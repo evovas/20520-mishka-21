@@ -13,6 +13,7 @@
 
     background-image: url("../img/content-header-mobile.jpg");
     background-repeat: no-repeat;
+    background-size: 569px 373px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content-header-mobile@2x.jpg");
@@ -88,6 +89,7 @@
       min-height: 747px;
 
       background-image: url("../img/content-header.jpg");
+      background-size: 1150px 746px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/content-header@2x.jpg");
