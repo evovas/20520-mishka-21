@@ -44,6 +44,17 @@
   left: calc(50% - 130px);
   top: 3px;
 
+  fill: rgba($black, 0.2);
+
+  &:hover,
+  &:focus {
+    fill: $mint-main;
+  }
+
+  &:active {
+    fill: rgba($mint-main, 0.3);
+  }
+
   &--search {
     left: calc(50% - 128px);
   }

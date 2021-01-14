@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 19px;
+  padding-bottom: 19px;
 
   font-size: 19px;
   line-height: 19px;
@@ -41,8 +41,19 @@
   .page-footer__logo {
     display: block;
 
-    img {
+    svg {
       display: block;
+
+      fill: $black;
+
+      &:hover,
+      &:focus {
+        fill: $mint-special-2;
+      }
+
+      &:active {
+        fill: rgba($mint-special-2, 0.3);
+      }
     }
   }
 
@@ -54,7 +65,7 @@
   }
 
   .page-footer__copyright {
-    margin: 0;
+    padding: 0;
   }
 }
 
