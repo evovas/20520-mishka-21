@@ -130,7 +130,7 @@
 
       background-image: url("../img/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
-      background-position-x: -20px;
+      background-position-x: 50%;
     }
 
     &--index {
@@ -227,7 +227,6 @@
       height: 34px;
 
       background-image: url("../img/zigzag-fill-desktop.svg");
-      background-position-x: -28px;
     }
 
     &--index {
@@ -235,7 +234,6 @@
 
       &::before {
         background-image: url("../img/zigzag-fill-desktop-index.svg");
-        background-position-x: -18px;
       }
     }
   }
