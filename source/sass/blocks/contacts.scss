@@ -37,8 +37,11 @@
   margin: 0;
 
   a {
-    position: relative;
+    display: inline;
+    padding-bottom: 2px;
+
     color: $black-text;
+    border-bottom: 1px solid $mint-border;
   }
 
   a:hover,
@@ -46,18 +49,8 @@
     color: $mint-special-2;
   }
 
-  a::before {
-    content: "";
-
-    position: absolute;
-    bottom: -3px;
-    width: 100%;
-    height: 1px;
-    background-color: $mint-border;
-  }
-
-  a:active::before {
-    content: none;
+  a:active {
+    border: none;
   }
 }
 
@@ -130,8 +123,9 @@
   .contacts__value {
     width: 242px;
 
-    a::before {
-      bottom: -4px;
+    a {
+      margin-left: -2px;
+      padding: 3px;
     }
   }
 
@@ -189,8 +183,8 @@
   }
 
   .contacts__value {
-    a::before {
-      bottom: -9px;
+    a {
+      padding-bottom: 8px;
     }
   }
 
