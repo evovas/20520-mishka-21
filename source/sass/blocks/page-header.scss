@@ -71,6 +71,10 @@
   &:active span {
     opacity: 0.3;
   }
+
+  &--close {
+    display: none;
+  }
 }
 
 .page-header__search {

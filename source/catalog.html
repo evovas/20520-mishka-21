@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка - Каталог товаров</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body">
     <header class="page__header page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -140,28 +140,31 @@
       </div>
     </footer>
 
-    <section class="modal-window modal-add-cart">
-      <h2 class="modal-add-cart__heading">Добавить в корзину</h2>
-      <form class="modal-add-cart__form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset name="modal-add-cart__fieldset product-parameter">
-          <legend class="product-parameter__name">Выберите размер:</legend>
-          <ul class="product-parameter__list">
-            <li class="product-parameter__item">
-              <input class="product-parameter__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
-              <label class="product-parameter__value" for="product-size-s">S</label>
-            </li>
-            <li class="product-parameter__item">
-              <input class="product-parameter__input" type="radio" id="product-size-m" name="product-size" value="m" checked>
-              <label class="product-parameter__value" for="product-size-m">M</label>
-            </li>
-            <li class="product-parameter__item">
-              <input class="product-parameter__input" type="radio" id="product-size-l" name="product-size" value="l" checked>
-              <label class="product-parameter__value" for="product-size-l">L</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="modal-add-cart__button" type="submit">Добавить</button>
-      </form>
+    <section class="page__modal modal-window modal-add-cart">
+      <div class="modal-window__wrapper">
+        <h2 class="modal-add-cart__heading">Добавить в корзину</h2>
+        <form class="modal-add-cart__form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="modal-add-cart__fieldset product-parameter">
+            <legend class="product-parameter__name">Выберите размер:</legend>
+            <ul class="product-parameter__list">
+              <li class="product-parameter__item">
+                <input class="product-parameter__input" type="radio" id="product-size-s" name="product-size" value="s" checked>
+                <label class="product-parameter__value" for="product-size-s">S</label>
+              </li>
+              <li class="product-parameter__item">
+                <input class="product-parameter__input" type="radio" id="product-size-m" name="product-size" value="m">
+                <label class="product-parameter__value" for="product-size-m">M</label>
+              </li>
+              <li class="product-parameter__item">
+                <input class="product-parameter__input" type="radio" id="product-size-l" name="product-size" value="l">
+                <label class="product-parameter__value" for="product-size-l">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal-add-cart__button button button--mint" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

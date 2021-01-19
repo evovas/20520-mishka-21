@@ -1,10 +1,14 @@
 .main-nav__toggle {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  top: 24px;
+  right: 26px;
+  padding: 15px;
 
   background-color: transparent;
   border: none;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &--no-js {
     display: none;
@@ -15,13 +19,24 @@
     height: 14px;
     background-image: url("../img/menu-open.svg");
   }
+
+  &--close {
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/menu-close.svg");
+  }
 }
 
 .main-nav__list {
+  display: block;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &--close {
+    display: none;
+  }
 }
 
 .main-nav__item {
