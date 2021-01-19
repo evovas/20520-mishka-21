@@ -44,6 +44,8 @@
   left: calc(50% - 130px);
   top: 3px;
 
+  fill: rgba($black, 0.2);
+
   &--search {
     left: calc(50% - 128px);
   }
@@ -63,13 +65,25 @@
 
   border-bottom: 1px solid $grey-border-mobile;
 
-  &:hover span,
-  &:focus span {
-    opacity: 0.6;
+  &:hover,
+  &:focus {
+    span {
+      opacity: 0.6;
+    }
+
+    svg {
+      fill: $mint-main;
+    }
   }
 
-  &:active span {
-    opacity: 0.3;
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+
+    svg {
+      fill: rgba($mint-main, 0.3);
+    }
   }
 
   &--close {

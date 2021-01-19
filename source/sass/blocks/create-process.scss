@@ -25,6 +25,7 @@
 }
 
 .create-process__heading {
+  position: relative;
   margin: 0;
   padding-left: 57px;
   margin-top: 21px;
@@ -32,6 +33,18 @@
 
   font-size: 17px;
   line-height: 24px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    left: -1px;
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/icon-video.svg");
+  }
 }
 
 .create-process__video {
@@ -72,6 +85,11 @@
     margin-bottom: 25px;
 
     font-size: 20px;
+
+    &::before {
+      top: -2px;
+      left: 0;
+    }
   }
 
   .create-process__video {
@@ -120,6 +138,11 @@
     padding: 0;
     margin-top: 96px;
     margin-bottom: 27px;
+
+    &::before {
+      top: -50px;
+      left: 0;
+    }
   }
 
   .create-process__video {
