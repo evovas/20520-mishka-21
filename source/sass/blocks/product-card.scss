@@ -80,6 +80,19 @@
   width: 41px;
   height: 39px;
   padding: 10px;
+
+  svg {
+    fill: rgba($black, 0.2);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $mint-main;
+  }
+
+  &:active svg {
+    fill: rgba($mint-main, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
