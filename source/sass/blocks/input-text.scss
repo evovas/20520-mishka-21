@@ -1,5 +1,9 @@
 .input-text {
   position: relative;
+
+  svg {
+    fill: rgba($black, 0.2);
+  }
 }
 
 .input-text__label {
@@ -63,6 +67,10 @@
   &:focus,
   &:active {
     border-bottom: 2px solid $mint-border;
+
+    & + svg {
+      fill: $mint-border;
+    }
   }
 }
 

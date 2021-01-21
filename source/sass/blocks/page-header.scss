@@ -85,6 +85,10 @@
       fill: rgba($mint-main, 0.3);
     }
   }
+
+  &--close {
+    display: none;
+  }
 }
 
 .page-header__search {

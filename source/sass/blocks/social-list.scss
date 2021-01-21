@@ -24,6 +24,19 @@
     width: 23px;
     height: 20px;
   }
+
+  svg {
+    fill: $black;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $mint-special-2;
+  }
+
+  &:active svg {
+    fill: rgba($mint-special-2, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

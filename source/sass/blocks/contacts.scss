@@ -58,10 +58,10 @@
   margin: 0 auto;
   margin-bottom: 42px;
 
-  //Временно для сетки
-  width: 320px;
-  height: 454px;
-  background-color: grey;
+  iframe {
+    width: 320px;
+    height: 454px;
+  }
 }
 
 .contacts__write-button {
@@ -130,9 +130,12 @@
   }
 
   .contacts__map {
-    width: 768px;
-    height: 457px;
     margin-bottom: 55px;
+
+    iframe {
+      width: 768px;
+      height: 457px;
+    }
   }
 
   .contacts__write-button {
@@ -190,9 +193,11 @@
 
   .contacts__map {
     grid-area: map;
-    width: 527px;
-    height: 457px;
     margin: 0;
+
+    iframe {
+      width: 527px;
+    }
   }
 
   .contacts__write-button {

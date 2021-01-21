@@ -30,6 +30,21 @@
   margin-right: 27px;
 }
 
+.page-footer__copyright-link {
+  svg {
+    fill: $mint-main;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $mint-special-2;
+  }
+
+  &:active svg {
+    fill: rgba($mint-special-2, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
