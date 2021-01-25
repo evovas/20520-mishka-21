@@ -65,19 +65,38 @@ if (reviewsControlPrevious && reviewsControlNext) {
 const buttonWeekOffer = document.querySelector(".week-offer__button");
 const buttonAddCart = document.querySelectorAll(".product-card__add-cart");
 const modalAddCart = document.querySelector(".modal-add-cart");
+const wrapperAddCart = modalAddCart.querySelector(".modal-window__wrapper");
 
-function openModal (button, modalWindow, toggleClassName) {
+function openModal (button, modalWindow, toggleClassName, modalWrapper) {
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalWindow.classList.add(toggleClassName);
+
+    modalWindow.addEventListener("click", function (evtClose) {
+      let modalCoordinates = modalWrapper.getBoundingClientRect();
+      if (!((modalCoordinates.left < evtClose.clientX) && (modalCoordinates.right > evtClose.clientX) && (modalCoordinates.top < evtClose.clientY) && (modalCoordinates.bottom > evtClose.clientY))) {
+        modalWindow.classList.remove(toggleClassName);
+      }
+    });
   });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalWindow.classList.contains(toggleClassName)) {
+        evt.preventDefault();
+        modalWindow.classList.remove(toggleClassName);
+      }
+    }
+  });
+
+
 }
 
 if (buttonWeekOffer) {
-  openModal(buttonWeekOffer, modalAddCart, "modal-add-cart--open");
+  openModal(buttonWeekOffer, modalAddCart, "modal-add-cart--open", wrapperAddCart);
 }
 if (buttonAddCart.length) {
   for (let i = 0; i < buttonAddCart.length; i++) {
-    openModal(buttonAddCart[i], modalAddCart, "modal-add-cart--open");
+    openModal(buttonAddCart[i], modalAddCart, "modal-add-cart--open", wrapperAddCart);
   }
 }
